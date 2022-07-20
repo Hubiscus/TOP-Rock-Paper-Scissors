@@ -30,3 +30,12 @@ console.log("Hello World!");
 // make counter var to counnt rounds 
 // for i = 0 ; i<5; i +++:
 //      playround()
+let choice = prompt("Pick between Rock , paper, or scissors");
+function userChoice(choice){
+    let playerChoice = choice.toLowerCase;
+    playerChoice == "rock" || "paper" || "scissors" ? 
+    playerChoice: 
+    playerChoice== "" ? console.log("Game cancelled no choice selected") 
+    : console.log("Invalid answer try again");userChoice()
+}
+userChoice();
