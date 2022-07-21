@@ -13,7 +13,7 @@ console.log("Hello World!");
 //      then computerChoice == "Rock"
 //  else if random number is  equal to 2
 //      then computerChoice == "Paper"
-//  else if none of those choices (if working correctly the only other number choice should be 3)
+//  else  none of those choices (if working correctly the only other number choice should be 3)
 //      then computerChoice== "Scisssors"
 // retutn computerChoice
 /// new function that plays single round
@@ -29,7 +29,7 @@ console.log("Hello World!");
 // game()new functuon that plays rounds takes no params
 // make counter var to counnt rounds 
 // for i = 0 ; i<5; i +++:
-//      playround()
+/*      playround()
 let choice = prompt("Pick between Rock , paper, or scissors");
 function userChoice(choice){
     let playerChoice = choice.toLowerCase;
@@ -38,4 +38,4 @@ function userChoice(choice){
     playerChoice== "" ? console.log("Game cancelled no choice selected") 
     : console.log("Invalid answer try again");userChoice()
 }
-userChoice();
+userChoice(); */
