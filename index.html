@@ -35,8 +35,8 @@
                     return "scissors"
                 } 
             }
-            console.log(computerChoice())
-            console.log(userChoice());
+            //console.log(computerChoice())
+            //console.log(userChoice());
             playerInput= userChoice();
             computerInput = computerChoice();
             function singleRound(playerChoice, computerInput){
@@ -74,7 +74,21 @@
                 }
                 return playerCounter, cpuCounter;
             }
-            console.log(singleRound(playerInput, computerInput));
+            //console.log(singleRound(playerInput, computerInput));
+            
+            //game()new functuon that plays rounds takes no params
+            // make counter var to counnt rounds 
+            // for i = 0 ; i<5; i +++:
+            /*      playround() */ 
+            function playGame(){
+                roundsPlayed= 0;
+                for (let i= 0;i<5; i++ ){
+                    roundsPlayed++;
+                    console.log( "Round "+roundsPlayed+ " start!");
+                    singleRound(playerInput, computerInput);
+
+                }
+            }
         </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
