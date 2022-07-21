@@ -37,7 +37,44 @@
             }
             console.log(computerChoice())
             console.log(userChoice());
-
+            playerInput= userChoice();
+            computerInput = computerChoice();
+            function singleRound(playerChoice, computerInput){
+                // if player selection is rock and cpu is scissors then the player wins 
+                //  else if player select is rock and cpu is paper player loses
+                //  else if player is paper and cpu is rock player wins
+                //  else if player is paper and cpu is scissors player loses 
+                //  else if player is scissors and cpu is paper player wins
+                // else if player is  scissors and  cpu is rock player loses 
+                // else (should account for all situation in which the cpu and player pick the same thing) draw
+                playerCounter=0;
+                cpuCounter= 0;
+                if (playerChoice ==  "rock" || computerChoice == "scissors"){
+                    playerCounter+=1;
+                    console.log("You Win!");
+                }else if (playerChoice ==  "rock" || computerChoice == "paper"){
+                    cpuCounter+= 1;
+                    console.log("You lost try again?")
+                }else if (playerChoice ==  "paper" || computerChoice == "rock"){
+                    playerCounter+=1;
+                    console.log("You Win!")
+                }else if (playerChoice ==  "paper" || computerChoice == "scissors"){
+                    cpuCounter+= 1;
+                    console.log("You lost try again?")
+                }else if (playerChoice ==  "scissors" || computerChoice == "paper"){
+                    playerCounter+=1;
+                    console.log("You Win!")
+                }else if (playerChoice ==  "scissors" || computerChoice == "rock"){
+                    cpuCounter+= 1;
+                    console.log("You lost try again?")
+                }else{
+                    playerCounter+=1;
+                    cpuCounter+= 1;
+                    console.log("its a tie!")
+                }
+                return playerCounter, cpuCounter;
+            }
+            console.log(singleRound(playerInput, computerInput));
         </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
